@@ -1,0 +1,40 @@
+GET http://localhost:3000/user
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU291cmFiaCBKYW5hIiwicGFzc3dvcmQiOiIkMmIkMTAkWnltMU1xckFneWRWU0s4aVdGejFudWdjMEkvQU43UGxOM0JBd3REamtIdDRCVEM2Q2I3a20iLCJpYXQiOjE2NzgwODgwNTcsImV4cCI6MTY3ODA4ODA3Mn0.0CAa0Xb_XTWC8NirS1l2jNOipIMccp1h_TnUngmgfh8
+
+###
+
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "name": "Sourabh Jana",
+    "password": "@143maababa"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU291cmFiaCBKYW5hIiwicGFzc3dvcmQiOiIkMmIkMTAkWnltMU1xckFneWRWU0s4aVdGejFudWdjMEkvQU43UGxOM0JBd3REamtIdDRCVEM2Q2I3a20iLCJpYXQiOjE2NzgwODgwMTd9.xnzL5JhVVdMivKcRu2xeHmTEo-7-mzlNQbq4rJhG7Y8"
+}
+
+###
+
+POST http://localhost:4000/user/login
+Content-Type: application/json
+
+{
+    "name": "Sourabh Jana",
+    "password": "@143maababa"
+}
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU291cmFiaCBKYW5hIiwicGFzc3dvcmQiOiIkMmIkMTAkWnltMU1xckFneWRWU0s4aVdGejFudWdjMEkvQU43UGxOM0JBd3REamtIdDRCVEM2Q2I3a20iLCJpYXQiOjE2NzgwODgwMTd9.xnzL5JhVVdMivKcRu2xeHmTEo-7-mzlNQbq4rJhG7Y8"
+}
